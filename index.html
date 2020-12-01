@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video games trivia</title>
+    <link rel="stylesheet" href="/main.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div id="home" class="screen">
+        <h1>Video games trivia</h1>
+        <div class="input">
+          <p>Select the number of questions:</p>
+          <input type="number" name="" id="numSel" max="50" min="3" value="3" />
+        </div>
+        <div class="input">
+          <p>Select Difficulty:</p>
+          <select name="" id="difSel">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <button id="start">Start quiz</button>
+      </div>
+
+      <div id="quiz" class="screen disabled">
+        <div id="footer">
+          <h1 id="currentQuestion">0 / 0</h1>
+          <button id="small-res">Restart</button>
+        </div>
+        <h3 id="question">1. Question</h3>
+        <div class="answers-cnt">
+          <div class="radio">
+            <input type="radio" name="a" id="" />
+            <p class="answer">Answer no.1</p>
+          </div>
+          <div class="radio">
+            <input type="radio" name="a" id="" />
+            <p class="answer">Answer no.2</p>
+          </div>
+          <div class="radio">
+            <input type="radio" name="a" id="" />
+            <p class="answer">Answer no.3</p>
+          </div>
+          <div class="radio">
+            <input type="radio" name="a" id="" />
+            <p class="answer">Answer no.4</p>
+          </div>
+        </div>
+        <button id="next">Next ></button>
+      </div>
+
+      <div id="end" class="screen disabled">
+        <h3>Your score:</h3>
+        <h1 id="scoreField">4/5</h1>
+        <button id="restart">Restart quiz</button>
+      </div>
+    </main>
+  </body>
+</html>
